@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenwood Heating and Home Services</title>
+    <link rel="icon" type="image/png" href="./img/icon.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" >
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" defer></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script> 
+  </head>
+  <body class="bg-white">
+    <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-lg">
+        <div class="flex flex-row md:flex-row items-center justify-center px-4 py-4 space-y-4 md:space-y-0 md:space-x-4">
+            <img src="./img/header_logo.png" alt="header logo" class="h-16 md:h-28">
+            <div class="flex flex-col items-center space-y-2 text-center">
+                <div class="flex flex-row items-center space-x-2">
+                    <i class="fas fa-phone text-yellow-600 text-2xl"></i>
+                    <span class="text-xl md:text-4xl font-bold text-black">206-207-4734</span>
+                </div>
+                <p class="text-xs text-gray-800">
+                    Serving Greater Seattle Metro Including King County & Snohomish County
+                </p>
+            </div>
+            <a href="#" class="bg-yellow-600 hover:bg-yellow-700 text-white py-2 px-12 rounded-full transition duration-300">
+                BOOK ONLINE
+            </a>
+        </div>
+        
+        <nav class="text-white py-1" style="background-color: #006747;">
+            <button id="menu-btn" class="md:hidden py-3 text-white text-2xl">☰</button>
+            <div class="max-w-7xl mx-auto flex items-center justify-center px-6 py-3">
+                <!-- desktop navbar -->
+                <ul class="hidden md:flex space-x-6 text-sm">
+                    <li><a href="#" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">HOME</a></li>
+
+                    <li class="group relative">
+                        <a href="#" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">ABOUT US</a> &#709;
+                        <ul class="absolute hidden group-hover:block bg-green-900 text-white shadow-lg space-y-2 py-2 w-40 top-4">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">HOME SERVICES BLOG</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">BRANDS WE TRUST</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">REVIEWS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">PHILANTHROPY</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">CAREERS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">SIGNATURE SERIES</a></li>
+                        </ul>
+                    </li>
+                    <li class="group relative">
+                        <a href="#" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">HEATING & AIR </a>&#709;
+                        <ul class="absolute hidden group-hover:block bg-green-900 text-white shadow-lg space-y-2 py-2 w-40 top-4">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">HEATING AND AIR REPAIR</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">HEATING AND AIR REPLACEMENT</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">HEATING AND AIR MAINTAINANCE</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">VENTILATION</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">HEAT PUMPS</a></li>
+                        </ul>
+                    </li>
+                    <li class="group relative">
+                        <a href="#" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">ELECTRICAL </a>&#709;
+                        <ul class="absolute hidden group-hover:block bg-green-900 text-white shadow-lg space-y-2 py-2 w-40 top-4">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">(EV) ELECTRIC VEHICLE CHARGING STATIONS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">GENERATORS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">SPAN SMART PANEL</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">PANEL ELECTRICAL SERVICES</a></li>
+                        </ul>
+                    </li>
+                    <li class="group relative">
+                        <a href="#" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">PLUMBING </a>&#709;
+                        <ul class="absolute hidden group-hover:block bg-green-900 text-white shadow-lg space-y-2 py-2 w-40 top-4">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">PLUMBING SERVICES</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">WATER HEATER</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">LEAK REPAIR</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">FIX CLOGGED DRAIN</a></li>
+                        </ul>
+                    </li>
+                    <li class="group relative">
+                        <a href="#" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">MEMBERSHIP</a> &#709;
+                        <ul class="absolute hidden group-hover:block bg-green-900 text-white shadow-lg space-y-2 py-2 w-40 top-4">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">CLUB MEMBERSHIP</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">CLUB MEMBERSHIP-MEMBER</a></li>
+                        </ul>
+                    </li>
+                    <li class="group relative">
+                        <a href="#" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">SPECIALS </a> &#709;
+                        <ul class="absolute hidden group-hover:block bg-green-900 text-white shadow-lg space-y-2 py-2 w-40 top-4">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">ENERGY REBATES</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">FINANCING</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">HEAT PUMP REBATE TAX CREDIT</a></li>
+                        </ul>
+                    </li>
+                    <li class="group relative">
+                        <a href="#" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">CONTACT </a>&#709;
+                        <ul class="absolute hidden group-hover:block bg-green-900 text-white shadow-lg space-y-2 py-2 w-40 top-4">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">EMPLOYEE PORTAL</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Mobile Navbar -->
+            <div id="mobile-menu" class="hidden md:hidden bg-green-900 text-white space-y-4 py-4 px-6">
+                <a href="#" class="block hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">Home</a>
+                <div class="relative">
+                    <button class="dropdown-toggle w-full text-left flex justify-between items-center hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600">
+                        About Us &#709;
+                    </button>
+                    <div class="dropdown-content hidden bg-green-900 text-white space-y-2 py-2 pl-4">
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Home Services Blog</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Brands We Trust</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Reviews</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Philanthropy</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Careers</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Signature Series</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <button class="dropdown-toggle w-full text-left flex justify-between items-center hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600">
+                        Heating & Air &#709;
+                    </button>
+                    <div class="dropdown-content hidden bg-green-900 text-white space-y-2 py-2 pl-4">
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Heating And Air Repair</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Heating And Air Replacement</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Heating And Air Maintenance</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Ventilation</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Heat Pumps</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <button class="dropdown-toggle w-full text-left flex justify-between items-center hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600">
+                        Electrical &#709;
+                    </button>
+                    <div class="dropdown-content hidden bg-green-900 text-white space-y-2 py-2 pl-4">
+                        <a href="#" class="block hover:bg-white hover:text-green-900">(EV) Electric Vehicle Charging Stations</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Generators</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">SPAN Smart Panel</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Panel Electrical Services</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <button class="dropdown-toggle w-full text-left flex justify-between items-center hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600">
+                        Plumbing &#709;
+                    </button>
+                    <div class="dropdown-content hidden bg-green-900 text-white space-y-2 py-2 pl-4">
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Plumbing Services</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Water Heater</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Leak Repair</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Fix Clogged Drain</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <button class="dropdown-toggle w-full text-left flex justify-between items-center hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600">
+                        Membership &#709;
+                    </button>
+                    <div class="dropdown-content hidden bg-green-900 text-white space-y-2 py-2 pl-4">
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Club Membership</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Club Membership-Member</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <button class="dropdown-toggle w-full text-left flex justify-between items-center hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600">
+                        Specials &#709;
+                    </button>
+                    <div class="dropdown-content hidden bg-green-900 text-white space-y-2 py-2 pl-4">
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Energy Rebates</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Financing</a>
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Heat Pump Rebate Tax Credit</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <button class="dropdown-toggle w-full text-left flex justify-between items-center hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600">
+                        Contact &#709;
+                    </button>
+                    <div class="dropdown-content hidden bg-green-900 text-white space-y-2 py-2 pl-4">
+                        <a href="#" class="block hover:bg-white hover:text-green-900">Employee Portal</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="pt-48">
+        <div class="bg-yellow-600 text-white text-center py-5 font-bold">
+            NOW BOOKING APPOINTMENTS ONLINE!
+        </div>
+        <section class="relative w-full h-full">
+            <img src="./img/seatle.jpg" alt="Seattle" class="w-full h-full object-cover">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/50">
+                <p class="text-white font-bold font-sans text-3xl md:text-5xl lg:text-5xl text-center px-8 py-4 mt-8 pt-8">
+                    Serving the Seattle Area Since 1921
+                </p>
+            </div>        
+        </section>
+        <div class="flex items-center justify-center text-xl font-bold text-white px-4 py-4" style="background-color: #006747;">
+        <div class="flex flex-wrap justify-center gap-12">
+            <div class="flex flex-col items-center space-y-2 text-center">
+                <i aria-hidden="true" class="fab fa-hotjar text-2xl"></i>
+                <p class="text-sm ">Heating</p>
+            </div>
+            <div class="flex flex-col items-center space-y-2 text-center">
+                <i aria-hidden="true" class="far fa-snowflake text-2xl"></i>
+                <p class="text-sm ">Air</p>
+            </div>
+            <div class="flex flex-col items-center space-y-2 text-center">
+                <i aria-hidden="true" class="fas fa-plug text-2xl"></i>
+                <p class="text-sm ">Electrical</p>
+            </div>
+            <div class="flex flex-col items-center space-y-2 text-center">
+                <i aria-hidden="true" class="fas fa-tools text-2xl"></i>
+                <p class="text-sm ">Plumbing</p>
+            </div>
+            <div class="flex flex-col items-center space-y-2 text-center">
+                <i aria-hidden="true" class="fas fa-dollar-sign text-2xl"></i>
+                <p class="text-sm ">Financing</p>
+            </div>
+            <div class="flex flex-col items-center space-y-2 text-center">
+                <i aria-hidden="true" class="fas fa-award text-2xl"></i>
+                <p class="text-sm ">Satisfaction</p>
+            </div>
+        </div>
+        </div>
+    <section class="bg-white flex items-center text-center justify-center py-8 px-8">
+        <p class="text-green-900 text-2xl text-center">Welcome to Greenwood Heating and Home Services, your full-service Heating, Air Conditioning, Electrical, and Plumbing company for your home!</p>
+    </section>
+    </div>
+  </body>
