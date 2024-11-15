@@ -46,3 +46,18 @@ document.addEventListener('click', function (event) {
         dropdowns.forEach(dropdown => dropdown.classList.add('hidden'));
     }
 });
+const carousel = document.getElementById("carousel");
+const dots = document.querySelectorAll(".dot");
+let currentIndex = 0;
+
+function scrollToImage(index) {
+  const offset = index * -100; // Each image takes up 100% of the carousel width
+  carousel.style.transform = `translateX(${offset}%)`;
+  currentIndex = index;
+
+  // Update dot colors
+  dots.forEach((dot, idx) => {
+    dot.classList.toggle("bg-gray-800", idx === index);
+    dot.classList.toggle("bg-gray-400", idx !== index);
+  });
+}
