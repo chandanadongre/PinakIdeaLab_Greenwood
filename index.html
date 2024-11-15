@@ -245,18 +245,128 @@
                     </div>
                 </div>
             </div>
-        </section>     
+        </section > 
+            
+        <section class="relative py-16 px-16 flex flex-col items-center text-white overflow-hidden">
+            <!-- Background Image and Overlay -->
+            <img src="./img/bg2.jpeg" alt="Background Image" class="absolute inset-0 w-full h-2/3 object-cover">
+            <div class="absolute inset-0 w-full h-1/2 bg-black opacity-40"></div>
+          
+            <!-- Top Content with Text and Logo -->
+            <div class="relative z-10 flex flex-row items-center justify-center text-center md:text-left max-w-5xl mb-24">
+              <p class="text-2xl font-bold md:w-1/2">
+                We provide a wide range of home service repair and replacement solutions
+              </p>
+              <img src="./img/carlogo.png" alt="Car Logo" class="w-62 h-52 object-contain mt-4 md:mt-0">
+            </div>
+          
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-center gap-6 w-full max-w-6xl mx-auto">
+                <!-- Box 1 -->
+                <div class="w-full md:w-1/4 transform -translate-y-8 rounded-lg overflow-hidden shadow-xl">
+                    <div class="h-1/2">
+                        <img src="./img/quality.png" alt="Quality" class="w-full h-48 object-cover rounded-t-lg"/>
+                    </div>
+                    <div class="h-1/2 bg-white p-6">
+                        <h3 class="font-bold text-yellow-700">Quality Workmanship</h3>
+                        <p class="mt-2 text-gray-600 text-sm">When you choose Greenwood Heating and Home Services you can expect nothing but the best in quality craftsmanship.</p>
+                        <button class="bg-green-900 text-white hover:bg-yellow-600 hover:text-green-900 transition-colors duration-300 rounded-full shadow-lg mt-4 py-2 px-6">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Box 2 -->
+                <div class="w-full md:w-1/4 transform -translate-y-8 rounded-lg overflow-hidden shadow-xl">
+                    <div class="h-1/2">
+                        <img src="./img/reviews.png" alt="Reviews" class="w-full h-48 object-cover rounded-t-lg"/>
+                    </div>
+                    <div class="h-1/2 bg-white p-6">
+                        <h3 class="font-bold text-yellow-700">Over 1,000 Five Star Reviews</h3>
+                        <p class="mt-2 text-gray-600 text-sm">Our team is so proud to serve Seattle homeowners. Great service is our specialty. Proudly serving Seattle for over 100 years.</p>
+                        <button class="bg-green-900 text-white hover:bg-yellow-600 hover:text-green-900 transition-colors duration-300 rounded-full shadow-lg mt-4 py-2 px-6">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Box 3 -->
+                <div class="w-full md:w-1/4 transform -translate-y-8 rounded-lg overflow-hidden shadow-xl">
+                    <div class="h-1/2 ">
+                        <img src="./img/financing.png" alt="Financing" class="w-full h-48 object-cover rounded-t-lg"/>
+                    </div>
+                    <div class="h-1/2 bg-white p-6">
+                        <h3 class="font-bold text-yellow-700">Financing Available</h3>
+                        <p class="mt-2 text-gray-600 text-sm">If you are looking to install a new ductless mini-split, HVAC system or Water Heater, you may be eligible for financing and rebates.</p>
+                        <button class="bg-green-900 text-white hover:bg-yellow-600 hover:text-green-900 transition-colors duration-300 rounded-full shadow-lg mt-4 py-2 px-6">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+          </section>
+          
+          <section class="relative py-8 px-4 md:py-16 md:px-16 flex flex-col items-center text-center">
+            <div>
+              <h1 class="text-yellow-600 mt-2 text-4xl md:text-6xl lg:text-6xl font-bold">Services</h1>
+            </div>
+            <div class="mt-8">
+                <h1 class="text-green-900 font-bold mt-4 text-3xl md:text-2xl lg:text-3xl">Trusted Equipment Partnerships</h1>
+                <div class="flex flex-wrap items-center justify-center gap-24 mt-8">
+                    <img src="./img/contract1.png"  class="w-18 h-18 md:w-28 md:h-32 lg:w-32 lg:h-32 object-contain border-b-2 border-gray-300">
+                    <img src="./img/contract2.png" class="w-18 h-18 md:w-28 md:h-32 lg:w-32 lg:h-32 object-contain border-b-2 border-gray-300">
+                    <img src="./img/contract3.png"  class="w-18 h-18 md:w-28 md:h-32 lg:w-32 lg:h-32 object-contain border-b-2 border-gray-300">
+                    <img src="./img/contract4.png"  class="w-18 h-18 md:w-28 md:h-32 lg:w-32 lg:h-32 object-contain border-b-2 border-gray-300">
+                </div>
+            </div>  
+            <div class="mt-8">
+                <h1 class="text-black font-bold mt-4 text-2xl md:text-2xl lg:text-3xl">What Our Customers Are Saying?</h1>  
+                <p class="text-black mt-4 text-2xl ">Over 1,000 five star reviews online</p> 
+            </div>
+        </section>
+        <section class="relative bg-gray-100 flex flex-col items-center justify-center w-full h-full">
+            <section class="text-center">
+                <p class="text-green-900 mt-4 text-3xl ">Monthly Special Offers</p>
+                
+                <div class="relative mt-8 w-full max-w-3xl overflow-hidden">
+                  <div id="carousel" class="flex transition-transform duration-500 ease-in-out gap-4">
+                    <!-- Images -->
+                    <img src="./img/o1.png" alt="Offer 1" class="w-1/2 h-48 object-cover">
+                    <img src="./img/o2.png" alt="Offer 2" class="w-1/2 h-48 object-cover">
+                    <img src="./img/o3.png" alt="Offer 3" class="w-1/2 h-48 object-cover">
+                    <img src="./img/o4.png" alt="Offer 4" class="w-1/2 h-48 object-cover">
+                    <img src="./img/o1.png" alt="Offer 5" class="w-1/2 h-48 object-cover">
+                    <img src="./img/o2.png" alt="Offer 6" class="w-1/2 h-48 object-cover">
+                    <img src="./img/o3.png" alt="Offer 3" class="w-1/2 h-48 object-cover">
+                    <img src="./img/o4.png" alt="Offer 4" class="w-1/2 h-48 object-cover">
+                  </div>
+                </div>
+              
+                <!-- Dot Navigation -->
+                <div class="flex justify-center mt-4 space-x-2">
+                  <button onclick="scrollToImage(0)" class="dot w-2 h-2 rounded-full bg-gray-400 focus:outline-none"></button>
+                  <button onclick="scrollToImage(1)" class="dot w-2 h-2 rounded-full bg-gray-400 focus:outline-none"></button>
+                  <button onclick="scrollToImage(2)" class="dot w-2 h-2 rounded-full bg-gray-400 focus:outline-none"></button>
+                </div>
+              </section>
+            <button class="rounded-full flex font-bold justify-center bg-green-900 text-white hover:bg-yellow-600 hover:border-b-2 border-white mt-4 py-2 px-8">
+                >Learn More
+            </button>
+            <div class="bg-green-900 text-white text-center flex flex-row justify-center py-5 gap-12 w-full font-bold mt-12">
+                <p class="text-white font-bold text-3xl">CALL TODAY FOR 24/7 SUPPORT</p> 
+                <p class="text-yellow-600 font-bold text-3xl">206-207-4734</p>
+            </div>
+        </section>
        
         <section class="relative py-16 px-16 flex items-center justify-center bg-cover bg-center text-white">
             <!-- Background image -->
             <img src="./img/bg2.jpeg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
         
             <!-- Overlay -->
-            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="absolute inset-0 bg-black opacity-40"></div>
         
             <!-- Text content -->
-            <div class="container mx-auto relative z-10">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="container mx-auto relative z-10 ">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-12">
                   <div class="text-center md:text-left text-xs font-semibold">
                     <h3 class="font-bold text-lg mb-4">QUICK LINKS</h3>
                     <ul>
@@ -268,8 +378,8 @@
                       <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">Plumbing Services</a></li>
                       <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">Join the Club</a></li>
                       <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">Special Offers</a></li>
-                      <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">Schedule An Estimate</a></li>
-                      <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">LICENSE# GREENHH771OM</a></li>                   
+                      <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">Schedule An Estimate</a></li><br>
+                      <li><a href="#" class="border-b-2 border-white :text-yellow-600 hover:border-b-2">LICENSE# GREENHH771OM</a></li>                   
                     </ul>
                   </div>
                   <div class="text-center text-xs font-semibold">
@@ -293,9 +403,23 @@
                     <p>Everett Location: <br>10819 Airport Rd<br> Everett, WA 98204</p>
                   </div>
                 </div>
-              </div>
-          </section>  
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 flex items-center ">
+                    <!-- Google Map 1 -->
+                    <div class="h-48 flex justify-center">
+                        <iframe class="w-11/12 h-11/12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670.687374342701!2d-122.2650823!3d47.8999664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490051511e4bb81%3A0xd503cba1e26e508a!2sGreenwood+Heating+and+Home+Services!5e0!3m2!1sen!2sus!4v1694024796803!5m2!1sen!2sus" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <!-- Google Map 2 -->
+                    <div class="h-48 flex justify-center">
+                        <iframe class="w-11/12 h-11/12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670.7117422252456!2d-122.261373!3d47.47749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906a83087fc9b1%3A0x873f03f33f7aaca9!2sGreenwood+Heating+and+Home+Services!5e0!3m2!1sen!2sus!4v1694025025509!5m2!1sen!2sus" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>            
+        </section> 
+
           <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>   
+    </div>
+    <div class="bg-gray-200 text-center">
+        <p class="font-sans text-gray-600"><br>Copyright © 2024 Greenwood Heating and Services</p><br>
     </div>
 
   </body>
